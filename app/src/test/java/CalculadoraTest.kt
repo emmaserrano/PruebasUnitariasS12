@@ -32,4 +32,12 @@ class CalculadoraTest {
 
         assertEquals(12, resultado)
     }
+
+    @Test
+    fun verificarDivision() {
+
+        val resultado = Calculadora().dividir(20, 4)
+
+        assertEquals(5, resultado)
+    }
 }
