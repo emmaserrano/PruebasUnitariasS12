@@ -40,4 +40,12 @@ class CalculadoraTest {
 
         assertEquals(5, resultado)
     }
+
+    @Test
+    fun verificarSumaNegativos() {
+
+        val resultado = Calculadora().sumar(-5, -3)
+
+        assertEquals(-8, resultado)
+    }
 }
