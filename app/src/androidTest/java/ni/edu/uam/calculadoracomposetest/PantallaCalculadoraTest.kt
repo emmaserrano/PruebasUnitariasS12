@@ -26,7 +26,7 @@ class PantallaCalculadoraTest {
 
         composeTestRule
             .onNodeWithTag("resultado")
-            .assertTextEquals("8")
+            .assertTextEquals("Resultado de la suma: 8")
     }
 
     @Test
@@ -42,6 +42,6 @@ class PantallaCalculadoraTest {
 
         composeTestRule
             .onNodeWithTag("resultado")
-            .assertTextEquals("6")
+            .assertTextEquals("Resultado de la resta: 6")
     }
 }
