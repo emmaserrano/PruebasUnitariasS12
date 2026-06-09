@@ -14,4 +14,14 @@ class CalculadoraTest {
 
         assertEquals(8, resultado)
     }
+
+    @Test
+    fun verificarResta() {
+
+        val calculadora = Calculadora()
+
+        val resultado = calculadora.restar(10, 4)
+
+        assertEquals(6, resultado)
+    }
 }
