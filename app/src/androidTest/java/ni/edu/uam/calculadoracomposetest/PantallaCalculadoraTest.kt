@@ -21,11 +21,27 @@ class PantallaCalculadoraTest {
         }
 
         composeTestRule
-            .onNodeWithText("Calcular")
+            .onNodeWithText("Sumar")
             .performClick()
 
         composeTestRule
             .onNodeWithTag("resultado")
             .assertTextEquals("8")
+    }
+
+    @Test
+    fun verificarBotonResta() {
+
+        composeTestRule.setContent {
+            PantallaCalculadora()
+        }
+
+        composeTestRule
+            .onNodeWithText("Restar")
+            .performClick()
+
+        composeTestRule
+            .onNodeWithTag("resultado")
+            .assertTextEquals("6")
     }
 }
