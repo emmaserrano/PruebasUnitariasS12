@@ -48,4 +48,12 @@ class CalculadoraTest {
 
         assertEquals(-8, resultado)
     }
+
+    @Test
+    fun pruebaFallida() {
+
+        val resultado = Calculadora().sumar(5, 3)
+
+        assertEquals(10, resultado)
+    }
 }
