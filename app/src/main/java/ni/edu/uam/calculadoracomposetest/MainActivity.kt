@@ -37,7 +37,15 @@ fun PantallaCalculadora() {
                 resultado = calculadora.sumar(5, 3).toString()
             }
         ) {
-            Text("Calcular")
+            Text("Sumar")
+        }
+
+        Button(
+            onClick = {
+                resultado = calculadora.restar(10, 4).toString()
+            }
+        ) {
+            Text("Restar")
         }
 
         Text(
