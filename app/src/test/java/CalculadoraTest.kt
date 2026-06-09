@@ -24,4 +24,12 @@ class CalculadoraTest {
 
         assertEquals(6, resultado)
     }
+
+    @Test
+    fun verificarMultiplicacion() {
+
+        val resultado = Calculadora().multiplicar(4, 3)
+
+        assertEquals(12, resultado)
+    }
 }
